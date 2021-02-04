@@ -9,7 +9,7 @@
 }
 
 .join-box {  
-    height: 26rem;
+    height: 29rem;
     margin: 0 auto;   
     padding: 2rem; 
     background-color: var(--color-3);
@@ -20,9 +20,10 @@
 }
 
 .join-box .heading {
-    margin: 3rem;
+    margin: 1rem 0 2rem 0;
     text-align: center;
-    color: #ffffff;
+    font-weight: 700;
+    color: var(--color-4);
 }
 
 .join-box .input-group{
@@ -67,4 +68,11 @@
     -webkit-box-shadow: 4px 4px 17px -1px rgba(0,0,0,0.3);
     -moz-box-shadow: 4px 4px 17px -1px rgba(0,0,0,0.3);
     box-shadow: 4px 4px 17px -1px rgba(0,0,0,0.3);
+    transition: 0.2s;
+}
+
+.join-box a:hover {
+    border: 1px solid var(--color-4);
+    background-color: transparent;
+    color: var(--color-4);
 }

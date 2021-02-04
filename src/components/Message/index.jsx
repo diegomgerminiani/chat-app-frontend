@@ -13,26 +13,30 @@ const Message = ({ message: { user, text }, name }) => {
     return (
         isSendByUser ? 
         (
-            <div className="messageContainer end">
-                <p className="sentText pr-10">
-                    {trimmedName}
-                </p>
-                <div className="messageBox blue">
-                    <p className="messageText white">
-                        {ReactEmoji.emojify(text)}
+            <div className="messageContainer">
+                <div className="messageGroup end">
+                    <div className="messageBox blue">
+                        <p className="messageText white">
+                            {ReactEmoji.emojify(text)}
+                        </p>
+                    </div>
+                    <p className="sentText pr-10">
+                        {trimmedName}
                     </p>
                 </div>
             </div>
         ) : (
-            <div className="messageContainer start">
-                <div className="messageBox light">
-                    <p className="messageText dark">
-                        {ReactEmoji.emojify(text)}
+            <div className="messageContainer">
+                <div className="messageGroup start">
+                    <div className="messageBox light">
+                        <p className="messageText dark">
+                            {ReactEmoji.emojify(text)}
+                        </p>
+                    </div>
+                    <p className="sentText pl-10">
+                        {user}
                     </p>
                 </div>
-                <p className="sentText pl-10">
-                    {user}
-                </p>
             </div>
         )
 

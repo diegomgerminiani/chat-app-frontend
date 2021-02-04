@@ -9,6 +9,7 @@ const Join = () => {
     return (
         <div className="join-container">
             <div className="join-box">
+                <div className="heading">CHAT APP</div>
                 <div className='input-group'>
                     <label htmlFor="input-name" className="input-label">Name</label>
                     <input id='input-name' type="text" className="input" onChange={(event) => {setName(event.target.value)}}/>
